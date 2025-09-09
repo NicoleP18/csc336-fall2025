@@ -9,59 +9,159 @@
                 margin: 30px;
             
             }
-            h1{
-                background-color: rgb(255, 232, 127);
+            header{
+                background: linear-gradient(to right, #f3f5c8, #fbf768);
                 border:30px;
                 border-radius: 15px;
-                margin: 30px;
-                padding: 30px;
+                margin-left: 300px;
+                margin-right: 300px;
+                padding: 20px;
                 text-align: center;
-                font-size:40px;
+                margin-bottom: 20px;
                 color: rgb(14, 0, 74);
                 
             }
-            nav{
-                background-color: beige;
+            h1{
+                font-size: 40px;
+                }
+            h2{
+                background-color: rgb(250, 237, 178);
                 border: 10px;
                 border-radius: 15px;
-                margin:20px
+                margin-left: 400px;
+                margin-right:400px;
+                padding: 10px;
+                text-align: center;
+                font-size:20px;
+                color: rgb(14, 0, 74);
+            }
+            p{
+                color: rgb(60, 45, 29);
+                text-align: center;
+                margin-left: 350;
+                margin-right:350;
             }
 
             .important {
-                background-color: rgb(228, 165, 165);
+                background-color: rgb(250, 237, 178);
             }
 
             .important:hover {
-                background-color: blanchedalmond;
+                background-color: rgb(250, 176, 57);
             }
             #special { 
-                background-color: green;
+                margin-left: 457px;
+                display: normal
             }
-
+            figure {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+                margin: 20px;
+            }
+            nav a {
+            border: 10px;
+            color: darkblue;
+            align-items: center;
+            }
+            nav a:hover { text-decoration: underline; }
+            section {
+            margin-bottom: 60px;
+            border-bottom: 2px dashed #ccc;
+            align-items: center;
+            }
             footer {
-                background-color: fuchsia;
-                border:20px;
-                border-radius: 15px;
-                margin: 10px;
-                padding: 5px;
+                background: linear-gradient(to right, #f4c8f5, #f54bd6);
+                color: white;
                 text-align: center;
+                padding: 15px;
+                margin-top: 40px;
+                border-radius: 8px;
+                margin-left: 100px;
+                margin-right: 100px;
                 font-size:20px;
-
-
-            }
+                }
+            
         </style>
     </head>
 
     <body>
+    <header>
         <h1>
-            Recent Things I Have Been Enjoying
+            My Summer Highlights
         </h1>
-        <p class="important">
-            There's another hello 
+        <nav>
+            <a href="#working">Working</a>
+            <a href="#concerts">Concerts</a>
+            <a href="#ISAM">ISAM</a>
+        </nav>
+    
+    </header>
+        
+    
+    <section id="working">
+        <h2 class="important">Working</h2>
+        <p>
+        I worked in Dr. Harry's Lab this summer at AU. He, and the lab, work in collaboration 
+        with <a href="https://www.ligo.caltech.edu/">LIGO</a> and we specifically work on the optics. 
+        I learned so much from both him and the research, and it just was an incredible experience overall! 
         </p>
-        <p id="special">
-            Hellooo
-        </p>
+    <figure>
+    <img src="lab.jpg" width="300"> 
+    <a href="https://www.american.edu/news/suger-sweetens-summer-research-experiences.cfm" > <img src="poster.jpg" width="300" > </a>
+    <img src="lab2.jpeg" width="300"> 
+    <img src="ligo.jpg" width="400"> 
+    </figure> 
+    </section>
+   
+  
+    <section id="concerts">
+    <h2 class="important">
+        Concerts
+    </h2>
+    <p>
+       I absolutely love live music, and especially enjoy it when it is my favorite bands and songs! This is who I saw: 
+    </p>
+   <style>
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin: 15px;
+        color:rgb(238, 27, 62);
+      }
+      .card-resp {
+        background: rgb(250, 153, 216);
+        padding: 20px;
+        border: 1px solid #aaa;
+        text-align: center;
+        font-size: 20px;
+      }
+      @media (max-width: 600px) {
+        .cards {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+    <div class="cards">
+      <div class="card-resp">Houndmouth</div>
+      <div class="card-resp">Caamp</div>
+      <div class="card-resp">The Lumineers</div>
+    </div>
+  </section>
+  
+  <section id="ISAM">
+  <h2 class="important">
+        ISAM
+    </h2>
+    <figure id="special">
+        <img src="ISAM.jpg", width="500">
+    </figure>
+    <p>
+        Some of the DaBL staff and I got to go to the ISAM conference in California. It was the highlight of my summer!
+    </p>
+    </section>
+
         <footer>
             Thanks for Reading!
         </footer>

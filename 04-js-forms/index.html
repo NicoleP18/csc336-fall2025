@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <h1>To-Do List</h1>
+
+    <div id="add-new-item">
+      <form id="add-item-form">
+        <label for="item-type-field">Item</label>
+        <input id="item-type-field" type="text">
+
+        <label for="item-importance-field"> <b>Importance </b>(1–5)</label>
+        <input id="item-importance-field" type="number" min="1" max="5">
+
+        <label for="item-dayDue-field">Day Due</label>
+        <input id="item-dayDue-field" type="date">
+
+        <label for="notes-type-field">Notes</label>
+        <input id="notes-type-field" type="text">
+
+        <button type="submit" id="add-item-button">Add Item</button>
+      </form>
+    </div>
+
+   
+    <div id="error-message" style="color:red; margin-top:10px;"></div>
+
+    <h2>My List</h2>
+    <div id="all-item-info"></div>
+  </body>
+</html>

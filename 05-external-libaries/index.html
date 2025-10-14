@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Assignment 5</title>
+        <script src="./script.js" defer></script>
+        <link rel="stylesheet" href="./style.css">
+        <meta charset="UTF-8" />
+        <title>Toastify Example</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    </head>
+ 
+    <body>
+        
+        <h1> Bon Bon Sushi Burrito</h1>
+
+        <p>
+            Bon Bon Sushi was my favorite restaurant in high school. They made something called a "Sushi Burrito", which has since been
+            popularized, but at the time, was still fairly new and inventive. Despite it's popularization, no one has been able to 
+            replicate both the impressiveness and deliciousness of Bon Bon's very own. I brought everyone I knew to
+            Bon Bon, and even convinced one of my teachers to let us leave to get sushi burritos for the class senior year, just so everyone 
+            could try them. Unbeknownst to us, that would be the last sushi burrito I, or any of us, would ever eat. The restaurant suddenly 
+            closed- ironically, because it receive too much business. I was so devastated that I sent the owner an email to let him know how much I loved
+            his classic sushi burritos. It unfortunately was not enough for him to stay open. Let this website be a tribute to Bon Bon, since their
+            page is no longer active.
+        </p>
+
+        
+    
+</head>
+<body>
+
+  <div class="image-row">
+    <img src="IMG_7867.jpeg" alt="Image 1" >
+    <img src="bon_bonforever.webp" alt="Image 2" >
+    <img src="IMG_7868.jpeg" alt="Image 3">
+  
+</div>
+        
+
+
+    <button onclick="showToast()">Sad News</button>
+
+    <div>
+        <h2>Hours</h2>
+        <p class="Example">
+            No Hours Left
+        </p>
+        </div>
+    
+        <div>
+        <h2>
+            Location
+        </h2>
+        <p class="Example">
+            22 N Darlington St, 
+            West Chester, PA 19380
+        </p>
+    </div>
+
+    <div>
+
+    </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script>
+    function showToast() {
+      Toastify({
+        text: "Bon Bon has closed indefinitely",
+        duration: 3000,
+        close: true,
+        gravity: "top",
+        position: "center",
+        backgroundColor: "linear-gradient(to right, #66ccff, #0033ff)",
+      }).showToast();
+    }
+  </script>
+
+    </body>
+
+
+

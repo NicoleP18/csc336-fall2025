@@ -1,0 +1,69 @@
+body{
+    background-color: azure;
+}
+h1{
+    padding:15px;
+    background: linear-gradient(lightblue, rgb(62, 62, 254));
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 20px;
+    line-height: 50px;
+}
+
+h2{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 20px;
+    line-height: 50px;
+}
+p{
+    padding:15px;
+    background-color: rgb(66, 190, 231);
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 20px;
+
+    
+}
+
+button{
+    padding:15px;
+    background: linear-gradient(rgb(62, 62, 254), lightblue);
+    border: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+
+
+
+
+}
+
+.image-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px; 
+      flex-wrap: wrap; 
+    }
+
+.image-row img {
+      width: 30%; 
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .example{
+    padding:15px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-radius: 20px;
+
+}

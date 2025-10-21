@@ -4,6 +4,9 @@ import express from "express";
 const app = express();
 
 app.use(express.static("./public"));
+app.use(express.json());
+
+
 
 app.get("/api/randomNumber", (req, res) => {
     res.send(Math.random());
@@ -11,7 +14,7 @@ app.get("/api/randomNumber", (req, res) => {
 } )
 
 app.post("/api/add", (req, res) => {
-    res.send("IT worked")
+    console.log(req.body.name);
 
 });
 

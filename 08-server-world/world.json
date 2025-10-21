@@ -1,0 +1,33 @@
+{ 
+    "places" : [
+        {
+            "name": "American University",
+            "type": "School",
+            "buildings" :[
+                {
+                    "name": "Don Myers",
+                    "number_of_rooms": 50,
+                    "classrooms": [
+                        {
+                            "name": "DaBL",
+                            "type": "lab",
+                            "employees": [
+                                {
+                                    "name": "Nickie",
+                                    "major": "Physics",
+                                    "skills": [
+                                        "laser cutter",
+                                        "soldering"
+                                    ]
+
+                                }
+                            ]
+                        }
+                    ]
+                        
+                }
+            ]
+        }
+    ]
+
+}

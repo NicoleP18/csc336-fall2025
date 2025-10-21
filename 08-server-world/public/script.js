@@ -3,7 +3,8 @@ async function loadWorld() {
     const data = await res.json();
 
     document.getElementById("worldDiv").innerHTML =
-        `<ul><li>${data.regions[0].towns[0].notable_people[0].name}</li></ul>`;
+        `<ul><li>${data.places[0].buildings[0].classrooms[0].employees[0].name}</li></ul>`;
+
 }
 
 loadWorld();

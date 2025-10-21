@@ -1,4 +1,5 @@
 import express from "express";
+import fs from "fs";
 
 const app = express();
 
@@ -17,19 +18,21 @@ app.post("/excite", async (req, res) => {
 
     const personToAddExcitementTo = req.body;
     
-    for (let region of world.regions) {
-        for (let city of region.towns) {
-            for (let person of city.notable_people) {
-                if (person.name === personToAddExcitementTo.name) {
-                    person.name += "!!!";
-                }
-            }
+    for (let place of world.places) {
+    for (let building of place.buildings) {
+      for (let classroom of building.classrooms) {
+        for (let employee of classroom.employees) {
+          if (employee.name === personToExcite.name) {
+            employee.name += "!!!";
+          }
         }
+      }
     }
+  }
 
     await fs.writeFileSync("world.json", JSON.stringify(world, null, 2));
 
     res.json(world);
 });
 
-app.listen(3000, () => console.log("Server running on http://localhost:3001"));
+app.listen(3000, () => console.log("Server running on http://localhost:3000"));

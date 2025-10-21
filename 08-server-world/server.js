@@ -22,7 +22,7 @@ app.post("/excite", async (req, res) => {
     for (let building of place.buildings) {
       for (let classroom of building.classrooms) {
         for (let employee of classroom.employees) {
-          if (employee.name === personToExcite.name) {
+          if (employee.name === personToAddExcitementTo.name) {
             employee.name += "!!!";
           }
         }

@@ -5,6 +5,7 @@ const app = express();
 
 app.use(express.static("./public"));
 app.use(express.json());
+app.use(cors());
 
 app.get("/world", (req, res) => {
   const data = fs.readFileSync("./world.json", "utf-8");

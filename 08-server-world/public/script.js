@@ -1,31 +1,27 @@
 async function loadWorld() {
-    const res = await fetch("/world");
-    const data = await res.json();
+  const res = await fetch("/world");
+  const data = await res.json();
 
-    document.getElementById("worldDiv").innerHTML =
-        `<ul><li>${data.places[0].buildings[0].classrooms[0].employees[0].name}</li></ul>`;
-
+  const employees = data.regions[0].buildings[0].classrooms[0].employees;
+  const list = employees.map(e => `<li>${e.name} (${e.major})</li>`).join("");
+  document.getElementById("worldDiv").innerHTML = `<ul>${list}</ul>`;
 }
 
 loadWorld();
 
-let nameForm = document.querySelector("#nameForm");
-
+const nameForm = document.querySelector("#nameForm");
 
 nameForm.addEventListener("submit", async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    
-    let formData = new FormData(nameForm);
-    let formDataInObjectForm = Object.fromEntries(formData.entries());
+  const formData = new FormData(nameForm);
+  const formDataObj = Object.fromEntries(formData.entries());
 
-    const res = await fetch("/excite", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formDataInObjectForm)
-    });
+  await fetch("/employee", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(formDataObj)
+  });
 
-    const updatedWorld = await res.json();
-    
-    loadWorld();
+  loadWorld();
 });

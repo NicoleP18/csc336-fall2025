@@ -1,33 +1,51 @@
-{ 
-    "places" : [
+{
+  "regions": [
+    {
+      "name": "American University",
+      "type": "School",
+      "buildings": [
         {
-            "name": "American University",
-            "type": "School",
-            "buildings" :[
+          "name": "Don Myers",
+          "number_of_rooms": 50,
+          "classrooms": [
+            {
+              "name": "DaBL",
+              "type": "lab",
+              "employees": [
                 {
-                    "name": "Don Myers",
-                    "number_of_rooms": 50,
-                    "classrooms": [
-                        {
-                            "name": "DaBL",
-                            "type": "lab",
-                            "employees": [
-                                {
-                                    "name": "Nickie",
-                                    "major": "Physics",
-                                    "skills": [
-                                        "laser cutter",
-                                        "soldering"
-                                    ]
-
-                                }
-                            ]
-                        }
-                    ]
-                        
+                  "name": "Nickie",
+                  "major": "Physics",
+                  "skills": [
+                    "laser cutter",
+                    "soldering"
+                  ]
+                },
+                {
+                  "name": "Sophie",
+                  "major": "Graphic Design",
+                  "skills": [
+                    "laser cutter",
+                    "3D Printing and Modeling"
+                  ]
+                },
+                {
+                  "name": "Ella",
+                  "major": "Physics",
+                  "skills": [
+                    "soldering",
+                    "arduino"
+                  ]
+                },
+                {
+                  "name": "Nicole Prendergast",
+                  "major": "Physics",
+                  "skills": "arduino, laser cutter"
                 }
-            ]
+              ]
+            }
+          ]
         }
-    ]
-
+      ]
+    }
+  ]
 }

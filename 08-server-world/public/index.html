@@ -1,17 +1,22 @@
 <html>
-
-<head>
-    <script src="./script.js" defer></script>
+  <head>
     <title>Assignment 8</title>
-</head>
+  </head>
+  <body>
+    <h1>American University Dabl Data</h1>
 
-<body>
     <div id="worldDiv"></div>
-    <form id="nameForm">
-        <label for="name">Name:</label>
-        <input type="text" name="name">
-        <button type="submit">Add Person!</button>
-    </form>
-</body>
 
+    <h2>Add a New Employee!</h2>
+    <form id="nameForm">
+      <label for="name">Name:</label>
+      <input type="text" name="name" required>
+      
+      <label for="major">Major:</label>
+      <input type="text" name="major" required>
+      
+      <button type="submit">Add Employee!</button>
+    </form>
+    <script src="./script.js" defer></script>
+  </body>
 </html>

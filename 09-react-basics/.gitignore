@@ -1,7 +1,7 @@
 */ 
 
-!dist/
-!dist/**
+!09-react-basics-live/
+!09-react-basics-live/**
 
 bruno.jpg
 node_modules/

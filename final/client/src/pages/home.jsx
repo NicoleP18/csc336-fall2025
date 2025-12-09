@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <div className="page">
-        <h1>The Reading Tracker</h1>
+        <h1>The Reading Tracker!</h1>
 
         <p>
           Welcome! As the biggest reader I know, I can imagine the difficulty

@@ -52,7 +52,7 @@ export default function Home() {
               fill out the form with the book's title, author, rating, approximately 
               when you read it, and any other notes you want to include. Once you submit the
               form, your book will be added to the database and you can view it on
-              the "View Books" page. Happy reading!
+              the "View Books" page. Happy reading!!
             </p>
           </div>
         </div>

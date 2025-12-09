@@ -27,7 +27,7 @@ export default function BookForm() {
     setError(null);
     setSuccess(false);
 
-    fetch("http://localhost:3000/api/books", {
+    fetch("api/books", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

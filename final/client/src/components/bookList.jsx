@@ -7,7 +7,7 @@ export default function BookList() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("api/books")
+    fetch("/api/books")
       .then((res) => {
         if (!res.ok) {
           throw new Error("Failed to fetch books");
